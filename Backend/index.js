@@ -25,7 +25,7 @@ app.use('/td1/list',todoRouter);
 const connect = async() => {
     try {
 
-        await mongoose.connect('mongodb://localhost:27017/ListToDo')
+        await mongoose.connect('mongodb+srv://luongminh:luongminh99@cluster0.wx8mw25.mongodb.net/List-Todo?retryWrites=true&w=majority')
         console.log("Kết nối thành công");
         
     } catch (error) {
